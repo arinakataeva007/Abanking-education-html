@@ -1,0 +1,187 @@
+body{
+    color: var(--Dark-Color, #21243D);
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 1152px;
+    
+}
+h1{
+    font-size: 44px;
+}
+h2{
+    font-size: 26px;
+}
+p{
+    font-size: 16px;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+a{
+    text-decoration: none;
+    color: var(--Dark-Color, #21243D);
+}
+.main-header nav{
+    margin-left: 856px;
+    margin-top: 27px;
+}
+.menu-info li{
+    display: inline;
+    padding-left: 26px;
+    font-size: 20px;
+    transition: transform .5s;
+}
+.about-Jhon{
+    display: flex;
+    margin-left: 148px;
+    margin-top: 140px;
+    margin-right: 149px;
+}
+.resume{
+    margin-right: 115px;
+}
+.resume button{
+    background:  #FF6464;
+    width: 208px;
+    height: 47px;
+    top: 477px;
+    left: 148px;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0px;
+    border: none;
+    text-align: center;
+}
+.resent-posts{
+    margin-top: 95px;
+    background: #EDF7FA;
+    height: 396px;
+    padding-top: 7px;
+    padding-right: 165px;
+    padding-left: 148px;
+    width: 1152px;
+    height: 396px;
+}
+.title-section1{
+    width: 856px;
+    display: flex;
+    justify-content: space-between;
+    transition: transform .25s;
+    font-size: 22px;
+}
+.title-section1 a{
+    color: var(--Secondry, #00A8CC); 
+    font-size: 20px
+}
+.about-design{
+    padding-bottom: 32px;
+}
+.about-design li{
+    width: 418px;
+    display: inline-block;
+    background: white;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 24px;
+    padding-bottom: 7px;
+    margin-right: 12px;
+    transition: transform .25s;
+}
+.about-design h2 + p{
+    font-size: 18px;
+}
+.featured-works{
+    margin-top: 15px;
+    padding-left: 148px;
+    font-size: 22px;
+}
+
+.featured-works > p{
+    font-size: 22px;
+}
+.featured-works h2{
+    font-size: 30px;
+}
+.section-with-works{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 856px;
+    height: 180px;
+    margin-top: 31px;
+    margin-bottom: 15px;  
+}
+.section-with-works div{
+    margin-left: 18px;
+    position: relative;
+    top: -30px;
+    transition: transform .35s;
+}
+.section-with-works div a{
+    font-size: 20px;
+    margin-left: 36px;
+    color: var(--Light, #8695A4);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.section-with-works div button{
+    width: 62px;
+    height: 25px;
+    border-radius: 16px;
+    background: #142850;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+.main-footer{
+    margin-top: 81px;
+    margin-left: 459px;
+}
+.main-footer li{
+    display: inline;
+    padding-right: 35px;
+}
+.main-footer p{
+    color: var(--Dark, #21243D);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 5px;
+    margin-bottom: 54px;
+}
+button:hover {
+	box-shadow: inset 0 0 0 3px #ffffff;
+}
+.about-Jhon img{
+    transition: transform .25s;
+}
+.about-Jhon img:hover{
+    transform: scale(1.5);
+    z-index: 1;
+    transition: transform .5s;
+}
+.menu-info li:active{
+    text-decoration-line: underline;
+}
+.about-design li:hover{
+    transform: scale(1.2);
+    z-index: 1;
+    transition: transform .5s;
+}
+.section-with-works:hover{
+    background-color: #EDF7FA;
+    border-radius: 5px;
+}
+.title-section1 a:hover{
+    text-decoration-line: underline;
+    transform: scale(1.1);
+}
