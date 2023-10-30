@@ -4,14 +4,22 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 1152px;
-    
-}
+    max-width: 1200px;
+    flex-shrink: 0;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+} 
 h1{
     font-size: 44px;
+    color: var(--Dark-Color, #21243D);
+    font-weight: 700;
+    line-height: 60px; 
 }
 h2{
     font-size: 26px;
+    font-weight: 700;
 }
 p{
     font-size: 16px;
@@ -27,6 +35,7 @@ a{
 .main-header nav{
     margin-left: 856px;
     margin-top: 27px;
+    align-items: center;
 }
 .menu-info li{
     display: inline;
@@ -36,9 +45,13 @@ a{
 }
 .about-Jhon{
     display: flex;
-    margin-left: 148px;
+    margin-left: 200px;
     margin-top: 140px;
-    margin-right: 149px;
+    padding-right: 115px;
+}
+.about-Jhon button{
+    margin-top:40px;
+    color: white;
 }
 .resume{
     margin-right: 115px;
@@ -60,11 +73,10 @@ a{
 .resent-posts{
     margin-top: 95px;
     background: #EDF7FA;
-    height: 396px;
     padding-top: 7px;
-    padding-right: 165px;
-    padding-left: 148px;
-    width: 1152px;
+    padding-left: 200px;
+    padding-bottom: 32px; 
+    width: 1056px;
     height: 396px;
 }
 .title-section1{
@@ -79,17 +91,18 @@ a{
     font-size: 20px
 }
 .about-design{
-    padding-bottom: 32px;
+    display: grid;
+    grid-template-columns: repeat(2,418px);
+    
 }
-.about-design li{
-    width: 418px;
-    display: inline-block;
+.about-design div{
     background: white;
     border-radius: 4px;
-    display: inline-block;
+    box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
     padding: 24px;
     padding-bottom: 7px;
     margin-right: 12px;
+    margin-bottom: 32px;
     transition: transform .25s;
 }
 .about-design h2 + p{
@@ -97,7 +110,7 @@ a{
 }
 .featured-works{
     margin-top: 15px;
-    padding-left: 148px;
+    padding-left: 200px;
     font-size: 22px;
 }
 
@@ -106,25 +119,36 @@ a{
 }
 .featured-works h2{
     font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
 }
-.section-with-works{
+.container{
+    display: grid;
+}
+.container > div{
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--Gray-5, #E0E0E0);
     flex-direction: row;
     display: flex;
     justify-content: space-between;
     width: 856px;
     height: 180px;
     margin-top: 31px;
-    margin-bottom: 15px;  
+    margin-bottom: 15px; 
 }
-.section-with-works div{
+.gallery{
     margin-left: 18px;
     position: relative;
     top: -30px;
     transition: transform .35s;
 }
+
 .section-with-works div a{
     font-size: 20px;
-    margin-left: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 26px;
     color: var(--Light, #8695A4);
     font-size: 20px;
     font-style: normal;
@@ -140,10 +164,10 @@ a{
     color: white;
     font-size: 18px;
     border: none;
-}
+} 
 .main-footer{
-    margin-top: 81px;
-    margin-left: 459px;
+    margin-top: 138px;
+    margin-left: 500px;
 }
 .main-footer li{
     display: inline;
@@ -172,7 +196,7 @@ button:hover {
 .menu-info li:active{
     text-decoration-line: underline;
 }
-.about-design li:hover{
+.about-design div:hover{
     transform: scale(1.2);
     z-index: 1;
     transition: transform .5s;
